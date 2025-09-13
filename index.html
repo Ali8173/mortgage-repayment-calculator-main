@@ -42,55 +42,54 @@
           <label for="mortgageAmount" class="label first-label"
             >Mortgage Amount</label
           >
-          <div class="mortgageAmount-input mortgageAmount formGroup">
-            <span class="currency-symbol">£</span>
-            <input
-              type="number"
-              id="mortgageAmount"
-              name="mortgageAmount"
-              placeholder="Enter amount"
-              class="input-field focusNrml"
-            />
+          <div class="mainCover">
+            <div class="mortgageAmount-input mortgageAmount formGroup">
+              <span class="currency-symbol">£</span>
+              <input
+                type="number"
+                id="mortgageAmount"
+                name="mortgageAmount"
+                placeholder="Enter amount"
+                class="input-field focusNrml"
+              />
+            </div>
+            <span></span>
           </div>
           <div class="span"></div>
           <div class="mortgage-term-and-interest-rate">
             <div class="formGroup">
               <label for="mortgageTerm" class="label">Mortgage Term</label>
-              <div class="mortgageAmount-input mortgage">
-                <input
-                  type="number"
-                  id="mortgageTerm"
-                  name="mortgageTerm"
-                  class="mortgageTerm input-field"
-                />
-                <span class="mortgage-span span-error">years</span>
-                <div class="error error-mortgageTerm"></div>
+              <div>
+                <div class="mortgageAmount-input mortgage">
+                  <input
+                    type="number"
+                    id="mortgageTerm"
+                    name="mortgageTerm"
+                    class="mortgageTerm input-field"
+                  />
+                  <span class="mortgage-span">years</span>
+                </div>
+                <span></span>
               </div>
             </div>
             <div class="formGroup">
               <label for="interestRate" class="label">Interest Rate</label>
-              <div class="mortgageAmount-input mortgage">
-                <input
-                  type="number"
-                  id="interestRate"
-                  name="interestRate"
-                  class="input-field"
-                />
-                <span class="mortgage-span span-error">%</span>
-                <div class="error error-mortgageTerm"></div>
+              <div>
+                <div class="mortgageAmount-input mortgage">
+                  <input
+                    type="number"
+                    id="interestRate"
+                    name="interestRate"
+                    class="input-field"
+                  />
+                  <span class="mortgage-span">%</span>
+                </div>
+                <span></span>
               </div>
             </div>
           </div>
           <label class="label">Mortgage Type</label>
           <div class="radio-div">
-            <label for="interestOnly" class="radio-label"
-              ><input
-                id="interestOnly"
-                type="radio"
-                name="repaymentType"
-                value="interestOnly"
-              /><span class="custom"></span>Interest only</label
-            >
             <label for="repayment" class="radio-label"
               ><input
                 id="repayment"
@@ -98,6 +97,14 @@
                 name="repaymentType"
                 value="repayment"
               /><span class="custom"></span>Repayment</label
+            >
+            <label for="interestOnly" class="radio-label"
+              ><input
+                id="interestOnly"
+                type="radio"
+                name="repaymentType"
+                value="interestOnly"
+              /><span class="custom"></span>Interest only</label
             >
             <div class="error error-radio"></div>
           </div>

@@ -74,6 +74,12 @@ form .mortgageAmount-input {
 
   border: 1px solid hsla(201, 56%, 16%, 0.792);
   border-radius: 5px;
+
+  transition: 0.3s;
+}
+
+form .mortgageAmount-input:focus-within {
+  border-color: hsl(61, 70%, 52%);
 }
 
 .currency-symbol {
@@ -86,6 +92,14 @@ form .mortgageAmount-input {
   font-size: 1rem;
   color: hsl(202, 55%, 16%);
   opacity: 0.8;
+
+  transition: 0.3s;
+}
+
+form .mortgageAmount-input:focus-within .currency-symbol {
+  background-color: hsl(61, 70%, 52%);
+  color: hsla(201, 56%, 16%);
+  opacity: 0.9;
 }
 
 .mortgageAmount-input input {
@@ -132,11 +146,21 @@ form .mortgage {
   font-size: 1rem;
   color: hsl(202, 55%, 16%);
   opacity: 0.7;
+
+  transition: 0.3s;
+}
+
+form .mortgage:focus-within .mortgage-span {
+  background: hsl(61, 70%, 52%);
+  color: hsl(202, 55%, 16%);
+  opacity: 0.9;
 }
 
 form .radio-div {
   margin-bottom: 1.5rem;
   margin-top: 0.5rem;
+
+  translate: 0.3s;
 }
 
 .radio-div .radio-label {
@@ -187,7 +211,6 @@ form .radio-div {
   color: hsl(202, 55%, 16%);
   background-color: hsl(61, 70%, 52%, 0.1);
   border-color: hsl(61, 70%, 52%);
-  translate: 0.3s;
 }
 
 /* 
