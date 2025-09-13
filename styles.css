@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /*   border: 1px solid black; */
 }
 
 body {
@@ -252,7 +253,7 @@ form .radio-div {
   border-bottom-left-radius: 90px;
   border-top-left-radius: 0;
   padding: 2rem;
-  max-width: 400px;
+  max-width: 450px;
   color: hsl(0, 0%, 100%);
 }
 
@@ -327,4 +328,55 @@ input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+
+@media (max-width: 750px) {
+  /* styles for small phones */
+
+  body {
+    height: 100%;
+  }
+  .container {
+    display: flex;
+    border-radius: 0px;
+    flex-direction: column;
+  }
+
+  .container-calculator {
+    padding: 1rem;
+    max-width: 300px;
+  }
+
+  .container-result {
+    background-color: hsl(202, 55%, 16%);
+    border-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0;
+    padding: 2rem;
+    max-width: 300px;
+  }
+
+  .header-section {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .header-section button {
+    flex-basis: 100%;
+    text-align: left;
+    margin-left: 10px;
+    padding-top: 5px;
+  }
+
+  .header-section h3 {
+    margin-right: 20px;
+  }
+
+  .mortgage-term-and-interest-rate {
+    display: block;
+  }
+
+  .submit-btn {
+    width: 100%;
+  }
 }

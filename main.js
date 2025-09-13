@@ -102,9 +102,9 @@ submitBtn.addEventListener("click", (e) => {
             To adjust the results, edit the form and click “calculate
             repayments” again.`;
     pdiv1Section2.textContent = "Your monthly repayments";
-    h3div1Section2.textContent = monthlyPayment.toFixed(2);
+    h3div1Section2.textContent = "£ " + monthlyPayment.toFixed(2);
     pdiv2Section2.textContent = "Total you'll repay over the term";
-    h3div2Section2.textContent = totalPayment.toFixed(2);
+    h3div2Section2.textContent = "£" + totalPayment.toFixed(2);
 
     section1.appendChild(h3Section1);
     section1.appendChild(pSection1);
@@ -253,7 +253,7 @@ clearBtn.addEventListener("click", function (e) {
                     </div>
           <h3 style="text-align: center;">Result shown here</h3>
           <p class="p" style="text-align: center;">
-            Complete the form an click "Calculate Repayments" to see what your
+            Complete the form and click "Calculate Repayments" to see what your
             monthly repayment would be.
           </p>
           

@@ -36,7 +36,9 @@
       <article class="container-calculator">
         <section class="header-section">
           <h3>Mortgage Calculator</h3>
-          <button type="submit" class="clear-all">Clear All</button>
+          <span
+            ><button type="submit" class="clear-all">Clear All</button></span
+          >
         </section>
         <form id="form">
           <label for="mortgageAmount" class="label first-label"
@@ -59,8 +61,8 @@
           <div class="mortgage-term-and-interest-rate">
             <div class="formGroup">
               <label for="mortgageTerm" class="label">Mortgage Term</label>
-              <div>
-                <div class="mortgageAmount-input mortgage">
+              <div class="">
+                <div class="mortgageAmount-input mortgage mortgage-term-div">
                   <input
                     type="number"
                     id="mortgageTerm"
@@ -75,7 +77,7 @@
             <div class="formGroup">
               <label for="interestRate" class="label">Interest Rate</label>
               <div>
-                <div class="mortgageAmount-input mortgage">
+                <div class="mortgageAmount-input mortgage mortgage-term-div">
                   <input
                     type="number"
                     id="interestRate"
@@ -128,7 +130,7 @@
           />
           <h3>Result shown here</h3>
           <p class="p">
-            Complete the form an click "Calculate Repayments" to see what your
+            Complete the form and click "Calculate Repayments" to see what your
             monthly repayment would be.
           </p>
         </div>
